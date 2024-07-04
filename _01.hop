@@ -1,20 +1,29 @@
-uses core;
+! retorna o quadrado da soma
 
 dec qsoma : num # num -> num;
-dec cubo : num -> num;
-dec prod : num # num -> num;
-dec imc : num # num -> num;
-dec brl_usd : num # num -> num;
-dec squad : num # num -> num;
-
 --- qsoma (x, y) <= pow (x + y, 2);
 
+! retorna o valor ao cubo
+
+dec cubo : num -> num;
 --- cubo x <= pow (x, 3);
 
+! calcula o produto
+
+dec prod : num # num -> num;
 --- prod (x, y) <= x * y;
 
+! calcula o imc
+
+dec imc : num # num -> num;
 --- imc (peso, altura) <= peso / pow (altura, 2);
 
---- brl_usd (vbrl, usd) <= vbrl / usd;
+! converte real em dolar
 
+dec brl_usd : num # num -> num;
+--- brl_usd (vbrl, usdbrl) <= vbrl / usdbrl;
+
+! retorna a soma dos quadrados
+
+dec squad : num # num -> num;
 --- squad (x, y) <= pow (x, 2) + pow (y, 2);

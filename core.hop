@@ -1,11 +1,29 @@
+! Return integer num from num.
+
 dec int : num -> num;
 --- int x <= (x * 100 - x * 100 mod 100) / 100;
+
+! Return sucessor of the num.
 
 dec suc : num -> num;
 --- suc x <= x + 1;
 
+! Return antecessor of the num.
+
 dec ant : num -> num;
 --- ant x <= x - 1;
 
-dec neg : num -> num;
---- neg x <= 0 - x;
+! Return switch signal of the num.
+
+dec switch_signal : num -> num;
+--- switch_signal x <= 0 - x;
+
+! Return min num.
+
+dec min : num # num -> num;
+--- min (x, y) <= if x < y then x else y;
+
+! Return max num.
+
+dec max : num # num -> num;
+--- max (x, y) <= if x > y then x else y;

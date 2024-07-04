@@ -1,0 +1,11 @@
+dec int : num -> num;
+--- int x <= (x * 100 - x * 100 mod 100) / 100;
+
+dec suc : num -> num;
+--- suc x <= x + 1;
+
+dec ant : num -> num;
+--- ant x <= x - 1;
+
+dec neg : num -> num;
+--- neg x <= 0 - x;
